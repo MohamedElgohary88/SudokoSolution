@@ -1,18 +1,696 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    tools:context="MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <GridLayout
+        android:id="@+id/grid_layout"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:columnCount="9"
+        android:rowCount="9">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <EditText
+            android:id="@+id/cell_00"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_01"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_02"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:layout_marginEnd="8dp"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_03"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="0"
+            android:layout_column="3"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_04"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="0"
+            android:layout_column="4"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_05"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="0"
+            android:layout_column="5"
+            android:layout_marginEnd="16dp"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <EditText
+            android:id="@+id/cell_06"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="0"
+            android:layout_column="6"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_07"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="0"
+            android:layout_column="7"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <EditText
+            android:id="@+id/cell_08"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="0"
+            android:layout_column="8"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+        <EditText
+            android:id="@+id/cell_09"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_010"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_011"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="1"
+            android:layout_column="2"
+            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_012"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="1"
+            android:layout_column="3"
+            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_013"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="1"
+            android:layout_column="4"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_014"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="1"
+            android:layout_column="5"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_015"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="2"
+            android:layout_column="6"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_016"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="1"
+            android:layout_column="7"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_017"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="1"
+            android:layout_column="8"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+        <EditText
+            android:id="@+id/cell_018"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="2"
+            android:layout_column="0"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_019"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="2"
+            android:layout_column="1"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_020"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:layout_marginBottom="16dp"
+            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_021"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="2"
+            android:layout_column="3"
+            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_022"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="2"
+            android:layout_column="4"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_023"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="2"
+            android:layout_column="5"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_024"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="1"
+            android:layout_column="6"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_025"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="2"
+            android:layout_column="7"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_026"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="2"
+            android:layout_column="8"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+        <EditText
+            android:id="@+id/cell_27"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="3"
+            android:layout_column="0"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_028"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="3"
+            android:layout_column="1"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_029"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="3"
+            android:layout_column="2"
+            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_030"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="3"
+            android:layout_column="3"
+            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_031"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="3"
+            android:layout_column="4"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_032"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="3"
+            android:layout_column="5"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_033"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="3"
+            android:layout_column="6"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_034"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="3"
+            android:layout_column="7"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_035"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="3"
+            android:layout_column="8"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_36"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="4"
+            android:layout_column="0"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_037"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="4"
+            android:layout_column="1"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_038"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="4"
+            android:layout_column="2"
+            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_039"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="4"
+            android:layout_column="3"
+            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_040"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="4"
+            android:layout_column="4"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_041"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="4"
+            android:layout_column="5"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_042"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="4"
+            android:layout_column="6"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_043"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="4"
+            android:layout_column="7"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_044"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="4"
+            android:layout_column="8"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_045"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="5"
+            android:layout_column="8"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_046"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="5"
+            android:layout_column="7"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_047"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="5"
+            android:layout_column="6"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_048"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="5"
+            android:layout_column="5"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_049"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="5"
+            android:layout_column="4"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_050"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="5"
+            android:layout_column="3"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_051"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="5"
+            android:layout_column="2"
+            android:layout_marginBottom="12dp"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_052"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="5"
+            android:layout_column="1"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_053"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="5"
+            android:layout_column="0"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_054"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="6"
+            android:layout_column="0"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_055"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="6"
+            android:layout_column="1"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_056"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="6"
+            android:layout_column="2"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_057"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="6"
+            android:layout_column="3"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_058"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="6"
+            android:layout_column="4"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_059"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="6"
+            android:layout_column="5"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_060"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="6"
+            android:layout_column="6"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_061"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="6"
+            android:layout_column="7"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_062"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="6"
+            android:layout_column="8"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_063"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="7"
+            android:layout_column="0"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_064"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="7"
+            android:layout_column="1"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_065"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="7"
+            android:layout_column="2"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_066"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="7"
+            android:layout_column="3"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_067"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="7"
+            android:layout_column="4"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_068"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="7"
+            android:layout_column="5"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_069"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="7"
+            android:layout_column="6"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_070"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="7"
+            android:layout_column="7"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_071"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="7"
+            android:layout_column="8"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_072"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="8"
+            android:layout_column="0"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_073"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="8"
+            android:layout_column="1"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_074"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="8"
+            android:layout_column="2"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_075"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="8"
+            android:layout_column="3"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_076"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="8"
+            android:layout_column="4"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_077"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="8"
+            android:layout_column="5"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_078"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="8"
+            android:layout_column="6"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_079"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="8"
+            android:layout_column="7"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cell_080"
+            style="@style/InputText"
+            android:layout_width="40dp"
+            android:layout_row="8"
+            android:layout_column="8"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/solve_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_weight="1"
+            android:text="Solve" />
+
+        <Button
+            android:id="@+id/clear_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_weight="1"
+            android:text="Clear" />
+
+    </LinearLayout>
+
+</LinearLayout>
